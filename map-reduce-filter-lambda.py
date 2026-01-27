@@ -1,10 +1,11 @@
+from functools import reduce
 # map
 nums = [1, 2, 3, 4, 5]
 newList = []
-
+"""
 def square(n):
     return n * n
-
+"""
 """
 for x in nums:
     # newList.append(x * x)
@@ -12,17 +13,18 @@ for x in nums:
 print(newList)
 """
 
-newList = list(map(square, nums))
+# newList = list(map(square, nums))
+newList = list(map(lambda x: x * x, nums))
 # print(newList)
 
 # filter
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 newList = []
-
+"""
 def findEven(n):
     if n % 2 == 0:
         return n
-
+"""
 """
 for x in nums:
     # if x % 2 == 0:
@@ -34,7 +36,7 @@ for x in nums:
 print(newList)
 """
 
-newList = list(filter(findEven, nums))
+newList = list(filter(lambda x: x % 2 == 0, nums))
 
 # print(newList)
 
@@ -42,13 +44,13 @@ newList = list(filter(findEven, nums))
 nums = [1, 2, 3, 4, 5]
 sum = 0
 
-
+"""
 def addSum(nums):
     sum = 0
     for x in nums:
         sum = sum + x
     return sum
-
+"""
 """
 for x in nums:
     sum = sum + x
@@ -56,6 +58,7 @@ for x in nums:
 print(sum)
 """
 # print(addSum(nums))
+print(reduce(lambda x, y: x + y, nums))
 
 # lambda
 nums = [1, 2, 3, 4, 5]
