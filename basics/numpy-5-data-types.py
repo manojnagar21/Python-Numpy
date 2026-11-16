@@ -25,7 +25,7 @@ arr = np.array([1, 2, 3, 4], dtype='S')
 print(arr)
 print(arr.dtype)
 
-arr = np.array([1, 2, 3, 4], dtype='i4')
+arr = np.array([1, 2, 3, 4], dtype='i4') # 1 byte = 8 bits -> 4 bytes = 32 bits
 print(arr)
 print(arr.dtype)
 

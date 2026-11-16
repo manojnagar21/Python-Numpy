@@ -35,6 +35,7 @@ print(type(np.add))
 print(type(np.concatenate))
 # print(type(np.blahblah))
 # Use an if statement to check if the function is a ufunc or not:
+
 if type(np.add) == np.ufunc:
     print('add is ufunc')
 else:

@@ -78,6 +78,8 @@ arr = np.array([[1, 2, 3],
                 [16, 17, 18]])
 newarr = np.array_split(arr, 3, axis=1)
 print("output", newarr)
+newarr = np.array_split(arr, 3, axis=0)
+print("output", newarr)
 """
 An alternate solution is using hsplit() opposite of hstack()
 """
