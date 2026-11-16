@@ -64,7 +64,7 @@ pip install numpy
 
 Clone the repository:
 
-git clone https://github.com/your-username/numpy-notes.git
+git clone https://github.com/manojnagar21/Python-Numpy.git
 
 
 Open the files and run the examples in:
